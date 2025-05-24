@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnegie Classification of Institutions of Higher Education&reg;</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="carnegieclassif.svg">
+</head>
+
+<body>
+    <nav class="navbar" id="Top">
+      <div class="iu-header">
+        <a class='iub-header-link' href="https://carnegieclassifications.acenet.edu/" target="_blank">
+          <img src="https://carnegieclassifications.acenet.edu/wp-content/themes/ace-carnegie-classifications/img/header-logo.svg" width=310 alt="Carnegie Classifications Logo">
+        </a>
+      </div>
+      <div class="right-menu">
+        <button onclick="toggleDropdown()" class="dropdown-btn" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Dashboards &#9662;</button>
+        <div id="dropdown" class="dropdown-content">
+          <a href="#DB1">Dashboard 1</a>
+          <a href="#DB2">Dashboard 2</a>
+          <a href="#DB3">Dashboard 3</a>
+          <a href="#DB4">Dashboard 4</a>
+          <a href="#DB5">Dashboard 5</a>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="dashboard-wrapper">
+      <div class="dashboard-container">
+
+        <!-- 1st split-flex -->
+        <div class="split-flex">
+          <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
+          <div class="side-panel">
+            <h2 class="black-font-a">U.S. Higher Education Trends: Institutions & Enrollment</h2><br>
+            <p class="black-font-a">
+              This interactive dashboard tells the story of how U.S. higher-education institutions and their enrollments have evolved from 1973 to 2020,<br><br>
+              tracking both absolute counts and relative shares across doctoral, master’s, bachelor’s, associate, special-focus, and tribal classifications. <br><br>
+              Use the tabs <strong>Institutions-Number</strong>, <strong>Institutions-Percent</strong>, <strong>Enrollment-Number</strong>, and <strong>Enrollment-Percent</strong> at the top to switch between views and explore the data from different perspectives.
+            </p>
+          </div>
+          <div class="right-panel">
+            <iframe id='DB1' title="CCIHE-FBI1" width="100%" height="100%" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiODk1YmIwZjQtOTM2YS00NWVhLTgyOTEtYTk3MGMwZTg3NWZiIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9"
+              frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+        
+        <!-- 2nd split-flex -->
+        <div class="split-flex">
+          <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
+          <div class="side-panel">
+            <h2 class="black-font-a">U.S. Higher-Ed by Control Type: Institutions & Enrollment</h2><br>
+            <p class="black-font-a">
+              This interactive dashboard reveals how public, private non-profit, and for-profit colleges and universities in the U.S. have expanded and shifted from 1973 to 2020,<br><br>
+              tracking both the total number of institutions and their combined enrollments.<br><br>
+              Use the <strong>Number of Institutions</strong> and <strong>Total Enrollment</strong> tabs at the top to toggle between structural growth and student-body trends, and apply the region buttons below to focus on specific geographic areas.
+            </p>
+          </div>
+          <div class="right-panel">
+            <iframe id='DB2' title="CCIHE-FBI1" width="100%" height="100%" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiYzYzZGEyY2UtODIwNi00ODc2LTkxNWEtMzJkNTViYTBmNDg1IiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9" 
+              frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+
+        <!-- 3rd split-flex -->
+        <div class="split-flex">
+          <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
+          <div class="side-panel">
+            <h2 class="black-font-a">Carnegie Classification Flows: Institutional Transitions</h2><br>
+            <p class="black-font-a">
+              This interactive Sankey diagram traces how U.S. higher-education institutions have shifted among Carnegie “Basic” classifications from 1973 through 2021, revealing the evolving flows into doctoral, master’s, bachelor’s, associate, special-focus, and tribal categories.<br><br>
+              Use the tabs at the top <strong>Overall Sankey</strong>, <strong>Doctoral Sankey</strong>, <strong>Master – Sankey</strong>, and <strong>Bachelor – Sankey</strong> to focus on the full longitudinal picture or drill down by degree level.
+            </p>
+          </div>
+          <div class="right-panel">
+            <iframe id='DB3' title="CCIHE-FBI1" width="100%" height="100%" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiYTcwNjBlMGMtYmJhZS00ZDU1LWE0NmItNjhkODE5NzUyYjhmIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9" 
+              frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+
+        <!-- 4th split-flex -->
+        <div class="split-flex">
+          <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
+          <div class="side-panel">
+            <h2 class="black-font-a">Category & Region Movement: Institutions vs Enrollment</h2><br>
+            <p class="black-font-a">
+              This animated bubble chart traces how each Carnegie classification category and geographic region has shifted in both number of institutions and total enrollment from 1973 through 2021, revealing emerging trends and regional growth patterns.<br><br>
+              Use the tabs at the top <strong>Category Movement</strong> and <strong>Region Movement</strong> to toggle between views and watch the bubbles animate by year.
+            </p>
+          </div>
+          <div class="right-panel">
+            <iframe id='DB4' title="CCIHE-FBI1" width="100%" height="100%" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiY2EyNGM5MzctMDViOS00NmI3LTg0Y2UtZWQ1NDBhMGYyY2ExIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9"
+              frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+
+        <!-- 5th split-flex -->
+        <div class="split-flex">
+          <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
+          <div class="side-panel">
+            <h2 class="black-font-a">Institutional Classification History: Yearly Label Changes</h2><br>
+            <p class="black-font-a">
+              This interactive table displays each institution’s Carnegie classification label across census years revealing when categories were renamed, when schools ceased reporting, came out or merged in, and when they first appeared or dropped out of the classification.<br><br>
+              Use the dropdown selector at the top to type an institution’s name or choose from the list and instantly filter the table to review its full classification timeline.
+            </p>
+          </div>
+          <div class="right-panel">
+            <iframe id='DB5' title="CCIHE-FBI1" width="100%" height="100%"
+              src="https://cchie-test5.onrender.com/"
+              frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+      // Dropdown menu logic
+      function toggleDropdown() {
+        document.getElementById("dropdown").classList.toggle("show");
+      }
+      function adjustDropdownBehavior() {
+        const dropdown = document.getElementById("dropdown");
+        const btn = document.getElementById("dropdownMenuButton");
+        if (window.innerWidth <= 768) {
+          dropdown.classList.add('show');
+          btn.onclick = null;
+          btn.setAttribute('aria-expanded', 'true');
+        } else {
+          dropdown.classList.remove('show');
+          btn.onclick = toggleDropdown;
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+      adjustDropdownBehavior();
+      window.addEventListener('resize', adjustDropdownBehavior);
+      window.onclick = function(event) {
+        if (window.innerWidth > 768) {
+          if (!event.target.matches('.dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      }
+      
+      
+      // Toggle narrative pane logic for every split-flex
+      document.addEventListener('DOMContentLoaded', () => {
+        // Remove all "expand" links if any remain
+        document.querySelectorAll('a.expand').forEach(el => el.remove());
+
+        // Add toggle functionality for each split-flex toggle button
+        document.querySelectorAll('.split-flex').forEach(split => {
+          const btn = split.querySelector('.toggle-pane-btn');
+          btn.addEventListener('click', function() {
+            split.classList.toggle('fullscreen');
+            // Change button arrow direction
+            if (split.classList.contains('fullscreen')) {
+              btn.textContent = '▶';
+              btn.setAttribute('aria-label', 'Show narrative pane');
+            } else {
+              btn.textContent = '◀';
+              btn.setAttribute('aria-label', 'Hide narrative pane');
+            }
+          });
+        });
+
+        // Escape key resets all to split view (desktop only)
+        document.addEventListener('keydown', e => {
+          if (e.key === 'Escape' && window.innerWidth > 900) {
+            document.querySelectorAll('.split-flex').forEach(flex => {
+              flex.classList.remove('fullscreen');
+              // Reset button arrow
+              const btn = flex.querySelector('.toggle-pane-btn');
+              if (btn) {
+                btn.textContent = '◀';
+                btn.setAttribute('aria-label', 'Hide narrative pane');
+              }
+            });
+          }
+        });
+      });
+    </script>
+
+    <div class="alert-banner">
+      <p>
+      The 2025 Carnegie Classifications have now been released. To learn more, please read the&nbsp;<a class='black-font-a'href='https://carnegieclassifications.acenet.edu/news/carnegie-classifications-redesign-better-reflects-the-higher-education-landscape-and-recognizes-student-success/'>press release</a>
+      </p>
+    </div>
+    <footer>
+      <div class="footer-left">
+        <div class="footer-left-top">
+          <div class="footer-image-cchie">
+          <a href="https://carnegieclassifications.acenet.edu/">
+          <img src="https://carnegieclassifications.acenet.edu/wp-content/themes/ace-carnegie-classifications/img/classifications-logo-footer.svg" alt="Carnegie Classification of Institution of Higher Education">
+          </a>
+         </div>
+          <div class="footer-left-address">
+            <p class="footer-ace">
+              AMERICAN COUNCIL ON EDUCATION
+            </p>
+            <p class="footer-address">
+              One Dupont Circle NW <br>
+              Washington, DC 20036 <br>
+              202-939-9300
+            </p>
+            <a class='mailto' href="mailto:carnegieclassifications.acenet.edu">
+              carnegie@acenet.edu
+            </a>
+          </div>
+          <div class="footer-social-media">
+            <div class='linkedin' >
+            <a href="https://www.linkedin.com/company/american-council-on-education/" aria-label="Linked In" title="Linked In" target="_blank">
+            <img width=20 src="linkedin.svg">
+            </a>
+            </div>
+            <div class="twitter">
+            <a href="https://x.com/ACEducation" aria-label="Twitter" title="Twitter" target="_blank">
+            <img width=20 src="x.svg"> 
+            </a>
+            </div>
+            <div class='youtube'>
+            <a href="https://www.youtube.com/user/ACEducationTV" aria-label="YouTube" title="YouTube" target="_blank">
+            <img width=20 src="youtube.svg">
+            </a>
+            </div>
+          </div>
+          </div>
+          <div class="footer-left-bottom">
+            
+            <img class='footer-left-label' width=60px src="https://carnegieclassifications.acenet.edu/wp-content/themes/ace-carnegie-classifications/img/cc_banner@2x.png" alt="Instruction Label">
+            
+            <p class="footer-left-cchie-info">
+              Carnegie Classification of Institutions of Higher Education is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike4.0 International License. <br> For a license to commercial and other uses outside the scope of the Creative Commons, contact 
+              <a href='mailto:classifications@carnegiefoundation.org'>
+                classifications@carnegiefoundation.org.
+              </a> Based on a work at <a href='http://carnegieclassifications.acenet.edu'> http://carnegieclassifications.acenet.edu
+              </a>
+            </p>
+            <p class="footer-left-cchie-info">
+              &copy; 2025 American Council on Education. All rights reserved. <a href='https://www.acenet.edu/Pages/privacy.aspx'>Privacy Statement</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-top">
+          <a href="https://acenet.edu/">
+          <img class='footer-right-ace' width=200px src="https://carnegieclassifications.acenet.edu/wp-content/themes/ace-carnegie-classifications/img/ace-footer.svg" alt="American Council on Education Logo">
+          </a>
+          <p class="footer-ace-link"><a class='white-font-a' href='https://acenet.edu/'>Visit ACE</a>&nbsp;&nbsp;<a class='white-font-a' href='https://carnegieclassifications.acenet.edu/#mailingListModal'>Join Our Mailing List</a>
+          </p>
+          </div>
+
+          <div class="footer-right-bottom">
+          <a href="https://www.carnegiefoundation.org/">
+          <img width=100px src="https://carnegieclassifications.acenet.edu/wp-content/themes/ace-carnegie-classifications/img/carnegie-tree-footer.svg"  alt="Carnegie Foundation Logo">
+          </a>
+          <br>
+          <a class="white-font-a" href="https://www.carnegiefoundation.org/">Visit The Carnegie Foundation</a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
