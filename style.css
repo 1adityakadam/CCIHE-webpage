@@ -51,9 +51,26 @@ html {
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 30px;
 }
+
 .dropdown-btn:hover {
   background-color: rgb(177, 192, 218);
 }
+
+.fullscreen-btn {
+  background-color: rgb(28, 46, 77);
+  color: rgb(255,255,255);
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 30px;
+}
+
+.fullscreen-btn:hover {
+  background-color: rgb(177, 192, 218);
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -69,6 +86,7 @@ html {
   overflow: hidden;
   z-index: 9999;
   top: calc(100% - 30px);
+  left: calc(100% - 190px);
 }
 .dropdown-content a {
   color: rgba(28, 46, 77, 0.596);
@@ -417,13 +435,14 @@ margin-bottom:20px;
   display: flex;
   flex-direction: column;
   margin-right: 50px;
+  margin-bottom: 15px;
 }
 
 .footer-right-bottom {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 
@@ -445,6 +464,12 @@ margin-bottom:20px;
 .blue-font-a {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(63, 119, 225);
+}
+
+.right-menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -473,9 +498,10 @@ margin-bottom:20px;
   }
 
   .right-menu {
+    flex-direction: column;
     width: 100%;
-    text-align: left;
-    margin-left: 0;
+    align-items: stretch;
+    padding: 0 20px;
   }
 
   .dropdown-btn {
@@ -489,7 +515,14 @@ margin-bottom:20px;
   .dropdown-content a {
      display:none
   }
+
+  .fullscreen-btn {
+    display:none
+   }
 }
+
+
+
 
 @media (max-width: 900px) {
   .dashboard-container {
@@ -710,4 +743,49 @@ margin-bottom:20px;
     font-size: 14px;
     width: calc(100% - 16px);
   }
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: rgb(28, 46, 77);
+}
+
+body.dark-mode .navbar {
+  background-color: rgb(48, 66, 97);
+}
+
+body.dark-mode .dashboard-wrapper {
+  background-color: rgb(0, 0, 0);
+}
+
+body.dark-mode .split-flex {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 2px 24px 2px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .side-panel {
+  background: rgb(48, 66, 97);
+  border: 1px solid rgb(68, 86, 117);
+}
+
+body.dark-mode .side-panel h2.black-font-a,
+body.dark-mode .side-panel p.black-font-a {
+  color: rgb(177, 192, 218);
+}
+
+body.dark-mode .black-font-a {
+  color: rgb(229, 236, 240);
+}
+
+body.dark-mode .alert-banner {
+  background-color: rgb(68, 86, 117);
+  color: rgb(229, 236, 240);
+}
+
+body.dark-mode .right-panel iframe {
+  box-shadow: 4px 4px 60px 10px rgba(28, 46, 77, 0.5);
+}
+
+body.dark-mode .iub-header-link img {
+  filter: brightness(0) invert(1);
 }
