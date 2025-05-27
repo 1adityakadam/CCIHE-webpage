@@ -19,11 +19,11 @@
       <div class="right-menu">
         <button onclick="toggleDropdown()" class="dropdown-btn" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Dashboards &#9662;</button>
         <div id="dropdown" class="dropdown-content">
-          <a href="#DB1">Dashboard 1</a>
-          <a href="#DB2">Dashboard 2</a>
-          <a href="#DB3">Dashboard 3</a>
-          <a href="#DB4">Dashboard 4</a>
-          <a href="#DB5">Dashboard 5</a>
+          <a href="#us-higher-education-trends">Overall</a>
+          <a href="#us-higher-education-by-control-type">Sectors</a>
+          <a href="#us-higher-education-institutional-transitions">Transitions</a>
+          <a href="#us-higher-education-category-and-region-movement">Regions</a>
+          <a href="#us-higher-education-classification-history">Ancestry</a>
         </div>
       </div>
     </nav>
@@ -35,15 +35,15 @@
         <div class="split-flex">
           <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
           <div class="side-panel">
-            <h2 class="black-font-a">U.S. Higher Education Trends: Institutions & Enrollment</h2><br>
+            <h2 class="black-font-a">U.S. Higher Education Trends</h2><br>
             <p class="black-font-a">
               This interactive dashboard tells the story of how U.S. higher-education institutions and their enrollments have evolved from 1973 to 2020,<br><br>
-              tracking both absolute counts and relative shares across doctoral, master’s, bachelor’s, associate, special-focus, and tribal classifications. <br><br>
+              tracking both absolute counts and relative shares across doctoral, master's, bachelor's, associate, special-focus, and tribal classifications. <br><br>
               Use the tabs <strong>Institutions-Number</strong>, <strong>Institutions-Percent</strong>, <strong>Enrollment-Number</strong>, and <strong>Enrollment-Percent</strong> at the top to switch between views and explore the data from different perspectives.
             </p>
           </div>
           <div class="right-panel">
-            <iframe id='DB1' title="CCIHE-FBI1" width="100%" height="100%" 
+            <iframe id='us-higher-education-trends' title="CCIHE-FBI1" width="100%" height="100%" 
               src="https://app.powerbi.com/view?r=eyJrIjoiODk1YmIwZjQtOTM2YS00NWVhLTgyOTEtYTk3MGMwZTg3NWZiIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9"
               frameborder="0" allowfullscreen="true"></iframe>
           </div>
@@ -53,7 +53,7 @@
         <div class="split-flex">
           <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
           <div class="side-panel">
-            <h2 class="black-font-a">U.S. Higher-Ed by Control Type: Institutions & Enrollment</h2><br>
+            <h2 class="black-font-a">U.S. Higher Education by Institutional Sectors</h2><br>
             <p class="black-font-a">
               This interactive dashboard reveals how public, private non-profit, and for-profit colleges and universities in the U.S. have expanded and shifted from 1973 to 2020,<br><br>
               tracking both the total number of institutions and their combined enrollments.<br><br>
@@ -61,7 +61,7 @@
             </p>
           </div>
           <div class="right-panel">
-            <iframe id='DB2' title="CCIHE-FBI1" width="100%" height="100%" 
+            <iframe id='us-higher-education-by-control-type' title="CCIHE-FBI1" width="100%" height="100%" 
               src="https://app.powerbi.com/view?r=eyJrIjoiYzYzZGEyY2UtODIwNi00ODc2LTkxNWEtMzJkNTViYTBmNDg1IiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9" 
               frameborder="0" allowfullscreen="true"></iframe>
           </div>
@@ -71,14 +71,14 @@
         <div class="split-flex">
           <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
           <div class="side-panel">
-            <h2 class="black-font-a">Carnegie Classification Flows: Institutional Transitions</h2><br>
+            <h2 class="black-font-a">Institutional Transitions</h2><br>
             <p class="black-font-a">
-              This interactive Sankey diagram traces how U.S. higher-education institutions have shifted among Carnegie “Basic” classifications from 1973 through 2021, revealing the evolving flows into doctoral, master’s, bachelor’s, associate, special-focus, and tribal categories.<br><br>
+              This interactive Sankey diagram traces how U.S. higher-education institutions have shifted among Carnegie "Basic" classifications from 1973 through 2021, revealing the evolving flows into doctoral, master's, bachelor's, associate, special-focus, and tribal categories.<br><br>
               Use the tabs at the top <strong>Overall Sankey</strong>, <strong>Doctoral Sankey</strong>, <strong>Master – Sankey</strong>, and <strong>Bachelor – Sankey</strong> to focus on the full longitudinal picture or drill down by degree level.
             </p>
           </div>
           <div class="right-panel">
-            <iframe id='DB3' title="CCIHE-FBI1" width="100%" height="100%" 
+            <iframe id='us-higher-education-institutional-transitions' title="CCIHE-FBI1" width="100%" height="100%" 
               src="https://app.powerbi.com/view?r=eyJrIjoiYTcwNjBlMGMtYmJhZS00ZDU1LWE0NmItNjhkODE5NzUyYjhmIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9" 
               frameborder="0" allowfullscreen="true"></iframe>
           </div>
@@ -88,14 +88,14 @@
         <div class="split-flex">
           <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
           <div class="side-panel">
-            <h2 class="black-font-a">Category & Region Movement: Institutions vs Enrollment</h2><br>
+            <h2 class="black-font-a">Institutions Category & Region Movement</h2><br>
             <p class="black-font-a">
               This animated bubble chart traces how each Carnegie classification category and geographic region has shifted in both number of institutions and total enrollment from 1973 through 2021, revealing emerging trends and regional growth patterns.<br><br>
               Use the tabs at the top <strong>Category Movement</strong> and <strong>Region Movement</strong> to toggle between views and watch the bubbles animate by year.
             </p>
           </div>
           <div class="right-panel">
-            <iframe id='DB4' title="CCIHE-FBI1" width="100%" height="100%" 
+            <iframe id='us-higher-education-category-and-region-movement' title="CCIHE-FBI1" width="100%" height="100%" 
               src="https://app.powerbi.com/view?r=eyJrIjoiY2EyNGM5MzctMDViOS00NmI3LTg0Y2UtZWQ1NDBhMGYyY2ExIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9"
               frameborder="0" allowfullscreen="true"></iframe>
           </div>
@@ -105,15 +105,15 @@
         <div class="split-flex">
           <button class="toggle-pane-btn" aria-label="Toggle narrative pane">◀</button>
           <div class="side-panel">
-            <h2 class="black-font-a">Institutional Classification History: Yearly Label Changes</h2><br>
+            <h2 class="black-font-a">Institutional Classification History</h2><br>
             <p class="black-font-a">
-              This interactive table displays each institution’s Carnegie classification label across census years revealing when categories were renamed, when schools ceased reporting, came out or merged in, and when they first appeared or dropped out of the classification.<br><br>
-              Use the dropdown selector at the top to type an institution’s name or choose from the list and instantly filter the table to review its full classification timeline.
+              This interactive table displays each institution's Carnegie classification label across census years revealing when categories were renamed, when schools ceased reporting, came out or merged in, and when they first appeared or dropped out of the classification.<br><br>
+              Use the dropdown selector at the top to type an institution's name or choose from the list and instantly filter the table to review its full classification timeline.
             </p>
           </div>
           <div class="right-panel">
-            <iframe id='DB5' title="CCIHE-FBI1" width="100%" height="100%"
-              src="https://cchie-test5.onrender.com/"
+            <iframe id='us-higher-education-classification-history' title="CCIHE-FBI1" width="100%" height="100%"
+              src="https://cchie-classification-history.onrender.com"
               frameborder="0" allowfullscreen="true"></iframe>
           </div>
         </div>
@@ -122,6 +122,16 @@
     </section>
 
     <script>
+      // Navbar scroll color change
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {  // Change color after scrolling 50px
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
       // Dropdown menu logic
       function toggleDropdown() {
         document.getElementById("dropdown").classList.toggle("show");
@@ -262,7 +272,7 @@
           <p class="footer-ace-link"><a class='white-font-a' href='https://acenet.edu/'>Visit ACE</a>&nbsp;&nbsp;<a class='white-font-a' href='https://carnegieclassifications.acenet.edu/#mailingListModal'>Join Our Mailing List</a>
           </p>
           </div>
-
+          
           <div class="footer-right-bottom">
           <a href="https://www.carnegiefoundation.org/">
           <img width=100px src="https://carnegieclassifications.acenet.edu/wp-content/themes/ace-carnegie-classifications/img/carnegie-tree-footer.svg"  alt="Carnegie Foundation Logo">
