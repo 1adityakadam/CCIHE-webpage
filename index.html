@@ -122,6 +122,15 @@
       </div>
     </section>
     <script>
+      // Reset URL hash and scroll position on page load/refresh
+      window.addEventListener('load', function() {
+        if (window.location.hash) {
+          // Remove the hash without triggering a jump
+          history.replaceState('', document.title, window.location.pathname + window.location.search);
+          // Scroll to top
+          window.scrollTo(0, 0);
+        }
+      });
 
       // Dropdown menu logic
       function toggleDropdown() {
