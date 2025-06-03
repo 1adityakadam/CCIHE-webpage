@@ -1,6 +1,9 @@
 # Carnegie Classifications of Institutions of Higher Education Webpage
 
-https://github.com/user-attachments/assets/332b77ce-5097-45ec-8068-02aaae6ae22e
+![image](https://github.com/user-attachments/assets/f8043fa0-022d-484c-8167-9741b7d1b32b)
+![image](https://github.com/user-attachments/assets/23617dc2-c495-4c46-a1ac-d79e0b04c933)
+![image](https://github.com/user-attachments/assets/7fca85d0-3816-4c37-8d82-651cfefb271f)
+
 
 # Carnegie Classification Higher Education Analytics Platform
 
